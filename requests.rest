@@ -1,0 +1,30 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGhlbGltIiwiaWF0IjoxNjAzNjY2MjUyLCJleHAiOjE2MDM2NjYyNjd9.uB21qB0iuyFCQPtiuRjyMgrt0U1KSRaOH-NL0zItMso
+
+
+###
+
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGhlbGltIiwiaWF0IjoxNjAzNjY2Njg2fQ.w0qAVaBl4cSbtneELuQUSG7A04qC5SoXSB9pTFAlBK8"
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiUGhlbGltIiwiaWF0IjoxNjAzNjY2Njg2fQ.w0qAVaBl4cSbtneELuQUSG7A04qC5SoXSB9pTFAlBK8"
+}
+
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Phelim"
+}
